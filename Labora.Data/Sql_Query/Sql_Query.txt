@@ -1,0 +1,12 @@
+﻿CREATE TABLE Country 
+(Id int identity(1,1) Primary key ,
+Name varchar(255),
+Active int default 1,
+unique(Name)
+)
+
+CREATE PROCEDURE [dbo].[SP_ListCountry]
+AS
+BEGIN
+	SELECT Id, Name FROM Country WHERE Active = 1 order by Name Asc
+END
