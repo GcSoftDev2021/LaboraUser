@@ -225,6 +225,7 @@
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts_App\Country.js" />
     <Content Include="Web.config" />
+    <Content Include="Views\Register\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
@@ -274,7 +275,6 @@
     <Folder Include="Views\City\" />
     <Folder Include="Views\Contry\" />
     <Folder Include="Views\Login\" />
-    <Folder Include="Views\Register\" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
