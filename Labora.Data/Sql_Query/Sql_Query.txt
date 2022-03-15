@@ -5,8 +5,13 @@ Active int default 1,
 unique(Name)
 )
 
+go
+
 CREATE PROCEDURE [dbo].[SP_ListCountry]
 AS
 BEGIN
 	SELECT Id, Name FROM Country WHERE Active = 1 order by Name Asc
 END
+
+go
+
