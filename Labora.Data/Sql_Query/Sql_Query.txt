@@ -15,3 +15,13 @@ END
 
 go
 
+CREATE TABLE Users 
+(Id int identity(1,1) Primary key ,
+Email varchar(255),
+Password varchar(255),
+DateCreate datetime,
+Active int default 1,
+unique(Email)
+)
+
+go

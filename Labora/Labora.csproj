@@ -152,6 +152,8 @@
     <Content Include="Scripts\jquery-3.6.0.min.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.js" />
     <Content Include="Scripts\jquery-3.6.0.slim.min.js" />
+    <Content Include="Scripts\js-cookie\js.cookie-2.2.1.min.js" />
+    <Content Include="Scripts\js-cookie\js.cookie.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\popper-utils.js" />
     <Content Include="Scripts\popper-utils.min.js" />
@@ -220,11 +222,78 @@
     <Content Include="Scripts\src\utils\setAttributes.js" />
     <Content Include="Scripts\src\utils\setStyles.js" />
     <Content Include="Scripts\src\utils\setupEventListeners.js" />
+    <Content Include="Scripts\Sweetalert2\dist\sweetalert2.all.js" />
+    <Content Include="Scripts\Sweetalert2\dist\sweetalert2.all.min.js" />
+    <Content Include="Scripts\Sweetalert2\dist\sweetalert2.css" />
+    <Content Include="Scripts\Sweetalert2\dist\sweetalert2.js" />
+    <Content Include="Scripts\Sweetalert2\dist\sweetalert2.min.css" />
+    <Content Include="Scripts\Sweetalert2\dist\sweetalert2.min.js" />
+    <Content Include="Scripts\Sweetalert2\src\constants.js" />
+    <Content Include="Scripts\Sweetalert2\src\globalState.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\buttons-handlers.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\close.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\enable-disable-elements.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\getInput.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\hideLoading.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\keydown-handler.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\popup-click-handler.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\progress-steps.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\update.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\validation-message.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\_destroy.js" />
+    <Content Include="Scripts\Sweetalert2\src\instanceMethods\_main.js" />
+    <Content Include="Scripts\Sweetalert2\src\privateMethods.js" />
+    <Content Include="Scripts\Sweetalert2\src\privateProps.js" />
+    <Content Include="Scripts\Sweetalert2\src\staticMethods.js" />
+    <Content Include="Scripts\Sweetalert2\src\staticMethods\argsToParams.js" />
+    <Content Include="Scripts\Sweetalert2\src\staticMethods\bindClickHandler.js" />
+    <Content Include="Scripts\Sweetalert2\src\staticMethods\dom.js" />
+    <Content Include="Scripts\Sweetalert2\src\staticMethods\fire.js" />
+    <Content Include="Scripts\Sweetalert2\src\staticMethods\mixin.js" />
+    <Content Include="Scripts\Sweetalert2\src\staticMethods\showLoading.js" />
+    <Content Include="Scripts\Sweetalert2\src\staticMethods\timer.js" />
+    <Content Include="Scripts\Sweetalert2\src\SweetAlert.js" />
+    <Content Include="Scripts\Sweetalert2\src\sweetalert2.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\aria.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\classes.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\defaultInputValidators.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\DismissReason.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\animationEndEvent.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\domUtils.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\getters.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\index.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\init.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\inputUtils.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\measureScrollbar.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\parseHtmlToContainer.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\render.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderActions.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderCloseButton.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderContainer.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderContent.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderFooter.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderIcon.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderImage.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderInput.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderPopup.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderProgressSteps.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\dom\renderers\renderTitle.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\getTemplateParams.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\iosFix.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\isNodeEnv.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\openPopup.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\params.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\scrollbarFix.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\setParameters.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\Timer.js" />
+    <Content Include="Scripts\Sweetalert2\src\utils\utils.js" />
     <Content Include="Scripts\umd\popper-utils.js" />
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
     <Content Include="Scripts_App\Country.js" />
+    <Content Include="Scripts_App\Register.js" />
     <Content Include="Web.config" />
     <Content Include="Views\Register\Index.cshtml" />
   </ItemGroup>
@@ -264,6 +333,20 @@
     <Content Include="Scripts\jquery-3.6.0.slim.min.map" />
     <Content Include="Scripts\jquery-3.6.0.min.map" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Scripts\Sweetalert2\CHANGELOG.md" />
+    <Content Include="Scripts\Sweetalert2\LICENSE" />
+    <Content Include="Scripts\Sweetalert2\package.json" />
+    <Content Include="Scripts\Sweetalert2\README.md" />
+    <Content Include="Scripts\Sweetalert2\src\scss\_animations.scss" />
+    <Content Include="Scripts\Sweetalert2\src\scss\_body.scss" />
+    <Content Include="Scripts\Sweetalert2\src\scss\_core.scss" />
+    <Content Include="Scripts\Sweetalert2\src\scss\_mixins.scss" />
+    <Content Include="Scripts\Sweetalert2\src\scss\_theming.scss" />
+    <Content Include="Scripts\Sweetalert2\src\scss\_toasts-animations.scss" />
+    <Content Include="Scripts\Sweetalert2\src\scss\_toasts-body.scss" />
+    <Content Include="Scripts\Sweetalert2\src\scss\_toasts.scss" />
+    <Content Include="Scripts\Sweetalert2\src\sweetalert2.scss" />
+    <Content Include="Scripts\Sweetalert2\src\variables.scss" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -279,6 +362,7 @@
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="Scripts\index.d.ts" />
+    <TypeScriptCompile Include="Scripts\Sweetalert2\sweetalert2.d.ts" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
