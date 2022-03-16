@@ -66,6 +66,7 @@
       <DependentUpon>ModelLabora.edmx</DependentUpon>
     </Compile>
     <Compile Include="DataEntities\DataCountry.cs" />
+    <Compile Include="DataEntities\DataRegister.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

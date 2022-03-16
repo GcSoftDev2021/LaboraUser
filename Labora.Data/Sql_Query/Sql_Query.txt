@@ -25,3 +25,23 @@ unique(Email)
 )
 
 go
+CREATE PROCEDURE [dbo].[SP_Register] @Email varchar(255), @Password varchar(255), 
+@Result varchar(max) OUTPUT
+AS
+BEGIN
+	DECLARE @ExistEmail int, @PasswordMD5 varchar(255)
+	SELECT @ExistEmail = COUNT(1) FROM Users WHERE Email = @Email
+	SELECT @PasswordMD5 = CONVERT ( VARCHAR (32), HashBytes ( 'MD5' ,  @Password ), 2)
+
+	IF @ExistEmail = 1
+		BEGIN
+			SET @Result = 'Error__El Correo Ingresado ya Existe'
+		END
+	ELSE
+		BEGIN
+			INSERT INTO Users(Email,Password,DateCreate)VALUES(LOWER(@Email),@PasswordMD5,GETDATE())
+			SET @Result = 'OK__Su registro fue Existoso'
+		END
+	SELECT @Result
+END
+
