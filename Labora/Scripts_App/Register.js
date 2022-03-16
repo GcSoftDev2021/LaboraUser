@@ -2,6 +2,7 @@
     let Email = $("#Email").val();
     let Password = $("#Password").val();
     let ConfirmPassword = $("#ConfirmPassword").val();
+
     debugger
     if (Email == "" || Email == null || Email == undefined) {        
         document.getElementById('Email').focus();   
@@ -16,14 +17,21 @@
         document.getElementById('ConfirmPassword').focus();
         Swal.fire('', 'Las contraseñas no son iguales por favor valide', 'warning');
     } else {
-        Swal.fire({
-            //title: 'Sweet!',
-            text: 'ok',
-            imageUrl: '../../Resources/Images_App/Logo0.png',
-            imageWidth: 200,
-            imageHeight: 100,
-            //imageAlt: 'Custom image',
-
-        })
+        emailRegex = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i;
+        if (emailRegex.test(Email)) {
+            Swal.fire('', 'Correo OK', 'success');
+        } else {
+            document.getElementById('Email').focus();
+            Swal.fire({
+                icon: 'info',
+                title: 'Mensaje del Sistema',                
+                text: 'Por favor ingrese un Correo Electronico valido',
+                //imageUrl: '../../Resources/Images_App/LogoAlert.png',
+                //imageWidth: 200,
+                //imageHeight: 50,
+                //imageAlt: 'Custom image',
+            })
+        }
+        
     }
 }
