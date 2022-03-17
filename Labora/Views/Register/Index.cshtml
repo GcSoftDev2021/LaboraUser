@@ -15,16 +15,28 @@
         </tr>
         <tr>
             <td>
-                <span>Contraseña</span>
-                <input style="min-width:100%" class="form-control" type="password" name="name" id="Password" value="" maxlength="8"/>
+                <span>Contraseña <span style="color:red; font-size:12px"><i>(Maximo 8 Caracteres)</i></span></span>
+                <input style="min-width:100%" class="form-control" type="password" name="name" id="Password" value="" maxlength="8" />
             </td>
         </tr>
         <tr>
             <td>
                 <span>Confirmar Contraseña</span>
-                <input style="min-width:100%" class="form-control" type="password" name="name" id="ConfirmPassword" value="" maxlength="8"/>
+                <input style="min-width:100%" class="form-control" type="password" name="name" id="ConfirmPassword" value="" maxlength="8" />
             </td>
         </tr>
+        @*<tr>
+            <td>
+                <span>Pregunta de Seguridad</span>
+                <select class="form-control" style="min-width:100%" id="SecurityQuestion"></select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <span>Respuesta</span>
+                <input style="min-width:100%" class="form-control" type="text" name="name" id="AnswerQuestion" value="" maxlength="50" />
+            </td>
+        </tr>*@
         <tr>
             <td>
                 <button class="btn btn-outline-success" onclick="Register()">Registrarse</button>
