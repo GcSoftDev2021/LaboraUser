@@ -1,9 +1,10 @@
 ﻿
 @{
-    ViewBag.Title = "Ingresar";
+    ViewBag.Title = "Register";
 }
 
-<h2>Ingresar</h2>
+<script src="~/Scripts_App/Register.js"></script>
+<h2>Registro</h2>
 
 <div>
     <table class="table table-borderless">
@@ -21,12 +22,17 @@
         </tr>
         <tr>
             <td>
-                <button class="btn btn-outline-success">Ingresar</button>
+                <span>Confirmar Contraseña</span>
+                <input style="min-width:100%" class="form-control" type="password" name="name" id="ConfirmPassword" value="" maxlength="8" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button class="btn btn-outline-success" onclick="Register()">Registrarse</button>
             </td>
         </tr>
     </table>
 </div>
-
 
 
 

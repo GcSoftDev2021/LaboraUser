@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace Labora.Controllers
 {
-    public class LoginController : Controller
+    public class UserDashboardController : Controller
     {
-        // GET: Login
+        // GET: UserDashboard
         public ActionResult Index()
         {
             return View();

@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Labora.Data.DataEntities
 {
-    public class DataRegister
+    public class DataAccount
     {
         readonly LaboraEntities _conection = new LaboraEntities();
-        public string Register(string Email, string Password) 
-        { 
+        public string Register(string Email, string Password)
+        {
             string Result = String.Empty;
             try
             {
@@ -21,14 +21,15 @@ namespace Labora.Data.DataEntities
                 var varPassword = new SqlParameter("@Password", SqlDbType.VarChar) { Value = Password };
                 var varResult = new SqlParameter("@Result", SqlDbType.VarChar) { Direction = ParameterDirection.Output, Size = 255 };
 
-                _conection.Database.ExecuteSqlCommand("SP_Register @Email, @Password, @Result Output", varEmail,varPassword, varResult);
+                _conection.Database.ExecuteSqlCommand("SP_Register @Email, @Password, @Result Output", varEmail, varPassword, varResult);
                 Result = Convert.ToString(varResult.Value);
             }
             catch (Exception ex)
-            { 
-                Result ="Error__"+ ex.Message;
+            {
+                Result = "Error__" + ex.Message;
             }
             return Result;
         }
+
     }
 }
